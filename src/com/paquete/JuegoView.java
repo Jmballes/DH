@@ -56,7 +56,7 @@ import android.view.View;
 public class JuegoView extends SurfaceView implements SurfaceHolder.Callback ,SensorListener 	 {
 
     
-  
+  ...
     public class JuegoThread extends Thread {
         JuegoActivity j;
         public void setActivity(JuegoActivity j){
