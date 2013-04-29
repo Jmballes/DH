@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<!--
+		* Copyright (C) 2007 Google Inc. * * Licensed under the Apache
+		License, Version 2.0 (the "License"); * you may not use this file
+		except in compliance with the License. * You may obtain a copy of the
+		License at * * http://www.apache.org/licenses/LICENSE-2.0 * * Unless
+		required by applicable law or agreed to in writing, software *
+		distributed under the License is distributed on an "AS IS" BASIS, *
+		WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or
+		implied. * See the License for the specific language governing
+		permissions and * limitations under the License.
+	-->
+
+<resources>
+	<string name="app_name">Duck Hunt</string>
+	<string name="title_text">Juan Manuel Ballesteros. UAH 0.1</string>
+
+	<string name="menu_continuar">Continuar</string>
+	<string name="menu_opciones">Opciones</string>
+	<string name="menu_salir">Salir</string>
+	<string name="menu_pausa">Pausa</string>
+
+
+
+	<string name="jugar">Jugar</string>
+	<string name="opciones">Opciones</string>
+	<string name="ayuda">Ayuda</string>
+	<string name="acercade">Acerca de</string>
+	<string name="salir">Salir</string>
+
+	<string name="uah">Universidad Alcala de Henares</string>
+	<string name="proyecto">Proyecto de Fin de Carrera: Guia de Desarrollo de videojuegos sobre Android.
+	Como crear Duck Hunt, un clasico divertido y adictivo</string>
+	<string name="autor">Autor: Juan Manuel Ballesteros Ortega Email: ballesteros_ortega@hotmail.com</string>
+
+	<string name="dialog_salir_titulo">Salir</string>
+	<string name="dialog_salir_texto">¿Estas seguro que deseas salir de la
+		aplicación?</string>
+	<string name="dialog_salir_ok">OK</string>
+	<string name="dialog_salir_cancelar">Cancelar</string>
+	<string name="dialog_sms_titulo">Enviar Puntuación</string>
+
+	
+	<string name="gameover_question">¿Deseas enviar tu puntuación a un amigo?</string>
+	
+	<string name="confirm_smstexto1">Se procederá a enviar un SMS a: </string>
+	<string name="confirm_smstexto2"> Este servicio no tiene costes adiccionales a los establecidos con su actual compañia.</string>
+	<string name="smstexto1">Buenas </string>
+	<string name="smstexto2">!!! Acabo de lograr </string>
+	<string name="smstexto3">puntos en el Duck Hunt para Android. Intenta superarme si puedes:P</string>
+		
+	<string name="preferences_sonido">Sonido</string>
+	<string name="preferences_musica_menu_titulo">Musica</string>
+	<string name="preferences_musica_menu_texto">Musica en el menu principal?</string>
+	<string name="preferences_efectos_ingame_titulo">Efectos de Sonido</string>
+	<string name="preferences_efectos_ingame_texto">Efectos de sonido durante la partida</string>
+
+	<string name="preferences_vibracion">Vibración</string>
+	<string name="preferences_vibracion_titulo">Vibracion</string>
+	<string name="preferences_vibracion_texto">Permite vibración durante la partida</string>
+
+	<string name="preferences_controles">Controles</string>
+	<string name="preferences_controles_titulo">Manejo del juego</string>
+	<string name="preferences_controles_texto">Forma de jugar</string>
+
+	<string name="preferences_idioma">Idioma</string>
+	<string name="preferences_idioma_titulo">Cambiar Idioma</string>
+	<string name="preferences_idioma_texto">Español</string>
+
+	<string name="ayuda_info_1">Bienvenido a Duck Hunt, tu objetivo en
+		este juego es acertar en el mayor numero de patos posible. Cada fase
+		consta de diez patos, y si en una de ellas fallas más de dos patos,
+		terminará tu partida.</string>
+	<string name="ayuda_info_2">Tienes dos modos de controles, Touch Mode,
+		con el que tendras que pulsar con tu dedo sobre el pato cuando lo
+		veas. Y Move Mode, en el que tendras que girar el movil y pulsar en el
+		trackball cuando tu puntero este sobre el pato</string>
+	<string name="ayuda_info_3">Ten en cuenta que tienes tres balas cada vez que
+		salgan los patos, asi que apunta muy bien; y date prisa, porque si
+		tardas mucho el pato puede huir.</string>
+
+	<string name="menu_juego_un_pato">Un pato</string>
+	<string name="menu_juego_dos_patos">Dos patos</string>
+
+	<string name="juego_puntuacion">PUNTUACIÓN</string>
+
+	<string name="juego_ronda">Ronda</string>
+	<string name="juego_gamover">Partida Terminada</string>
+</resources>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent">
+
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:orientation="vertical">
+
+		<!-- The following four examples use a large image -->
+		<!-- 1. Non-scaled view, for reference -->
+		<TextView android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:paddingTop="10dip"
+			android:text="@string/autor" />
+		<TextView android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:paddingTop="10dip"
+			android:text="@string/proyecto" />
+		<LinearLayout android:layout_width="wrap_content"
+		android:layout_height="fill_parent" android:orientation="horizontal" android:layout_gravity="center_horizontal">
+			<ImageView android:src="@drawable/pato_small"
+				 android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:layout_gravity="center_horizontal" />
+			<ImageView android:src="@drawable/perro_small"
+				 android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:layout_gravity="center_horizontal" />
+		</LinearLayout>
+		<ImageView android:src="@drawable/uah"
+			android:adjustViewBounds="true" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_gravity="center_horizontal" />
+		<TextView android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:paddingTop="10dip"
+			android:text="@string/uah" />
+		
+
+
+
+
+	</LinearLayout>
+</ScrollView>
