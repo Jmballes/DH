@@ -5,7 +5,6 @@ package com.paquete;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.Dialog;
-
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -13,7 +12,6 @@ import android.hardware.SensorManager;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
-import android.os.RemoteException;
 import android.preference.PreferenceManager;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -22,6 +20,7 @@ import android.view.View;
 import android.widget.CheckBox;
 import android.widget.Spinner;
 
+import com.newproyectjmb.R;
 import com.paquete.JuegoView.JuegoThread;
 
 

@@ -7,6 +7,8 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 
+import com.newproyectjmb.R;
+
 
 
 public class MenuJuegoOLD extends Activity

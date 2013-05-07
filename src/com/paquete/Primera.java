@@ -11,6 +11,8 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 
+import com.newproyectjmb.R;
+
 public class Primera extends Activity {
     /** Called when the activity is first created. */
 	//public static final int MENU_JUGAR = 0;

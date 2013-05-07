@@ -8,11 +8,13 @@ import android.database.Cursor;
 import android.os.Bundle;
 import android.provider.Contacts.People;
 import android.provider.Contacts.Phones;
+import android.telephony.gsm.SmsManager;
 import android.view.View;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.SimpleCursorAdapter;
-import android.telephony.gsm.SmsManager;
+
+import com.newproyectjmb.R;
 
 
 public class EnviarSMS extends ListActivity {

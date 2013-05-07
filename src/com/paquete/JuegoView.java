@@ -24,11 +24,6 @@ package com.paquete;
 import java.util.ArrayList;
 import java.util.Vector;
 
-import com.draw.Drawable;
-import com.draw.ObjetoAnimable;
-
-
-
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.content.res.Resources;
@@ -42,7 +37,6 @@ import android.graphics.drawable.ShapeDrawable;
 import android.graphics.drawable.shapes.RoundRectShape;
 import android.hardware.SensorListener;
 import android.hardware.SensorManager;
-import android.os.Looper;
 import android.os.Vibrator;
 import android.preference.PreferenceManager;
 import android.util.AttributeSet;
@@ -50,13 +44,16 @@ import android.view.KeyEvent;
 import android.view.MotionEvent;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
-import android.view.View;
+
+import com.draw.Drawable;
+import com.draw.ObjetoAnimable;
+import com.newproyectjmb.R;
 
 
 public class JuegoView extends SurfaceView implements SurfaceHolder.Callback ,SensorListener 	 {
 
     
-  ...
+
     public class JuegoThread extends Thread {
         JuegoActivity j;
         public void setActivity(JuegoActivity j){
@@ -919,7 +916,7 @@ public class JuegoView extends SurfaceView implements SurfaceHolder.Callback ,Se
             		imagenBala = BitmapFactory.decodeResource(resources, R.drawable.bala);
             		imagenInterfazPatoAcertado = BitmapFactory.decodeResource(resources, R.drawable.duck);
             		imagenInterfazPatoFallado= BitmapFactory.decodeResource(resources, R.drawable.duckwhite);
-            		listDrawable.add(object)
+            		//listDrawable.add(object)
             		perro = new Perro(imagenPerro,this);
             		solicitarMusica(MUSICA_INICIO);
             		setFirstRound();

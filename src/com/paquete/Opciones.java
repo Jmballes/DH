@@ -23,6 +23,8 @@ import android.os.Bundle;
 import android.preference.PreferenceActivity;
 import android.util.Log;
 
+import com.newproyectjmb.R;
+
 public class Opciones extends PreferenceActivity implements OnSharedPreferenceChangeListener{
 
 
