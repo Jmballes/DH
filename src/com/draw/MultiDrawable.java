@@ -3,6 +3,8 @@ package com.draw;
 import java.util.ArrayList;
 
 import android.graphics.Bitmap;
+import android.graphics.Canvas;
+import android.graphics.Paint;
 
 public abstract class MultiDrawable {
 	private float z;
@@ -64,7 +66,7 @@ public abstract class MultiDrawable {
 	public void setBitmap(ArrayList<Bitmap> bitmap) {
 		this.bitmap = bitmap;
 	}
-
+	public abstract void draw(Canvas canvas,Paint paint);
 	
 	
 	
