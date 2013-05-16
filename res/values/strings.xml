@@ -12,7 +12,9 @@
 	-->
 
 <resources>
+    	<string name="aplict_name">New Proyect</string>
 	<string name="app_name">Duck Hunt</string>
+
 	<string name="title_text">Juan Manuel Ballesteros. UAH 0.1</string>
 
 	<string name="menu_continuar">Continuar</string>
