@@ -6,8 +6,8 @@ import android.graphics.Paint;
 import android.graphics.Rect;
 import android.graphics.RectF;
 
-import com.paquete.JuegoView.JuegoThread;
-import com.paquete.Pato;
+import com.newproyectjmb.Pato;
+import com.newproyectjmb.JuegoView.JuegoThread;
 
 public class ObjetoAnimable {
 	

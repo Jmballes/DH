@@ -14,7 +14,7 @@
  * the License.
  */
 
-package com.paquete;
+package com.newproyectjmb;
 
 
 
@@ -22,6 +22,7 @@ package com.paquete;
 
 
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Vector;
 
 import android.content.Context;
@@ -46,8 +47,11 @@ import android.view.SurfaceHolder;
 import android.view.SurfaceView;
 
 import com.draw.Drawable;
+import com.draw.MultiDrawable;
 import com.draw.ObjetoAnimable;
+import com.draw.Zone;
 import com.newproyectjmb.R;
+import com.objects.Interfaz;
 
 
 public class JuegoView extends SurfaceView implements SurfaceHolder.Callback ,SensorListener 	 {
@@ -133,6 +137,7 @@ public class JuegoView extends SurfaceView implements SurfaceHolder.Callback ,Se
                 }
              }
              catch (Exception e) {
+            	 e.printStackTrace();
  				System.out.println(e);
  				}
              finally {
@@ -379,6 +384,9 @@ public class JuegoView extends SurfaceView implements SurfaceHolder.Callback ,Se
 				
 				paintPuntero(canvas,paint);
 				//canvas.drawText(timeGame+"", 50, 50, paint);
+				for (MultiDrawable drawable:listDrawable){
+					drawable.draw(canvas, paint, new Zone(0,(int)(canvas.getHeight()-drawable.getHeight()),0,canvas.getWidth(),(int) drawable.getHeight()));
+				} 
 			}
 
 				//invalidate();
@@ -579,13 +587,14 @@ public class JuegoView extends SurfaceView implements SurfaceHolder.Callback ,Se
         public long getTiempoTranscurrido(){
         	return System.currentTimeMillis() - timeGame;
         }
-        ArrayList<Drawable> listDrawable;
+        
         Bitmap imagenPato ;
         Bitmap imagenFondo ;
         Bitmap imagenPerro ;
         Bitmap imagenBala ;
         Bitmap imagenInterfazPatoAcertado ;
         Bitmap imagenInterfazPatoFallado ;
+        List<MultiDrawable> listDrawable;
         Perro perro;
         int estadoJuego;
         int estadoAnteriorJuego;
@@ -650,7 +659,7 @@ public class JuegoView extends SurfaceView implements SurfaceHolder.Callback ,Se
         	}
         }
 
-        private boolean ducksFaileds[];
+        public boolean ducksFaileds[];
         public int currentDuck=-totalDePatosPorMiniFase;
         
         /**
@@ -738,7 +747,7 @@ public class JuegoView extends SurfaceView implements SurfaceHolder.Callback ,Se
          *	ronda nos encontramos actualmente.
          */
         private int round;
-        private int getRound(){
+        public int getRound(){
         	return round;
         }
         private void incRound(){
@@ -916,6 +925,10 @@ public class JuegoView extends SurfaceView implements SurfaceHolder.Callback ,Se
             		imagenBala = BitmapFactory.decodeResource(resources, R.drawable.bala);
             		imagenInterfazPatoAcertado = BitmapFactory.decodeResource(resources, R.drawable.duck);
             		imagenInterfazPatoFallado= BitmapFactory.decodeResource(resources, R.drawable.duckwhite);
+            		listDrawable=new ArrayList<MultiDrawable>();
+            		Interfaz interfaz=new Interfaz();
+            		interfaz.load(resources,);
+            		listDrawable.add(interfaz);
             		//listDrawable.add(object)
             		perro = new Perro(imagenPerro,this);
             		solicitarMusica(MUSICA_INICIO);
@@ -1103,7 +1116,7 @@ public class JuegoView extends SurfaceView implements SurfaceHolder.Callback ,Se
 
 
     /** Thread de nuestra aplicación */
-    private JuegoThread thread;
+    public JuegoThread thread;
     
     /** Total de patos que saldran en una minifase */
     private static int totalDePatosPorMiniFase=-1;
@@ -1285,7 +1298,7 @@ public class JuegoView extends SurfaceView implements SurfaceHolder.Callback ,Se
     }
     
 	/** Vector que contendra los Disparos realizados en una minifase.*/
-    private Vector disparos=new Vector();
+    public Vector disparos=new Vector();
     
     /**
      * Clase que almacena los valores necesarios cuando un Disparo se lanza. Entre ellos su posición

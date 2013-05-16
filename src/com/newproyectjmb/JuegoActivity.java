@@ -1,4 +1,4 @@
-package com.paquete;
+package com.newproyectjmb;
 
 
 
@@ -21,7 +21,7 @@ import android.widget.CheckBox;
 import android.widget.Spinner;
 
 import com.newproyectjmb.R;
-import com.paquete.JuegoView.JuegoThread;
+import com.newproyectjmb.JuegoView.JuegoThread;
 
 
 

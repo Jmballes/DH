@@ -1,4 +1,4 @@
-package com.paquete;
+package com.newproyectjmb;
 
 import android.app.AlertDialog;
 import android.app.Dialog;

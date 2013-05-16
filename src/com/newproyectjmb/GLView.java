@@ -1,4 +1,4 @@
-package com.paquete;
+package com.newproyectjmb;
 
 import android.content.Context;
 import android.util.AttributeSet;

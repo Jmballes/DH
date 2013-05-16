@@ -14,7 +14,7 @@
  * under the License.
  */
 
-package com.paquete;
+package com.newproyectjmb;
 
 import android.content.Context;
 import android.content.SharedPreferences;

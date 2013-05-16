@@ -1,4 +1,4 @@
-package com.paquete;
+package com.newproyectjmb;
 
 public abstract class Personaje {
 	private float z;

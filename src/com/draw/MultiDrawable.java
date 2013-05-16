@@ -1,8 +1,12 @@
 package com.draw;
 
 import java.util.ArrayList;
+import java.util.List;
 
+import android.content.res.Resources;
 import android.graphics.Bitmap;
+import android.graphics.Canvas;
+import android.graphics.Paint;
 
 public abstract class MultiDrawable {
 	private float z;
@@ -15,7 +19,7 @@ public abstract class MultiDrawable {
 	
 	private float witdh;
 	
-	private ArrayList<Bitmap> bitmap;
+	public List<Bitmap> listDrawable;
 
 	public float getZ() {
 		return z;
@@ -57,15 +61,8 @@ public abstract class MultiDrawable {
 		this.witdh = witdh;
 	}
 
-	public ArrayList<Bitmap> getBitmap() {
-		return bitmap;
-	}
-
-	public void setBitmap(ArrayList<Bitmap> bitmap) {
-		this.bitmap = bitmap;
-	}
-
-	
+	public abstract void draw(Canvas canvas,Paint paint,Zone zone);
+	public abstract void load(Resources resources);
 	
 	
 }

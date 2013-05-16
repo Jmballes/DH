@@ -1,7 +1,7 @@
-package com.paquete;
+package com.newproyectjmb;
 
 import com.draw.ObjetoAnimable;
-import com.paquete.JuegoView.JuegoThread;
+import com.newproyectjmb.JuegoView.JuegoThread;
 
 import android.graphics.Bitmap;
 import android.graphics.Canvas;

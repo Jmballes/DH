@@ -1,4 +1,4 @@
-package com.paquete;
+package com.newproyectjmb;
 
 import java.io.IOException;
 import java.io.InputStream;

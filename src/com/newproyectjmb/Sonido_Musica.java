@@ -1,5 +1,5 @@
 
-package com.paquete;
+package com.newproyectjmb;
 
 import java.io.IOException;
 
