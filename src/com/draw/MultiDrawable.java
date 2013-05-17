@@ -61,8 +61,10 @@ public abstract class MultiDrawable {
 		this.witdh = witdh;
 	}
 
+
 	public abstract void draw(Canvas canvas,Paint paint,Zone zone);
 	public abstract void load(Resources resources);
-	
+
+
 	
 }
